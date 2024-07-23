@@ -1,0 +1,12 @@
+.header {
+  @apply h-[100px] flex justify-between pr-9 pl-4 bg-[#111214] text-white fill-white
+}
+.header>div {
+  @apply flex gap-8 items-center
+}
+.header>div a {
+  @apply text-2xl
+}
+.header>div svg {
+  @apply w-10 h-10
+}
