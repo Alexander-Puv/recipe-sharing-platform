@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 
 const Header = () => {
-  const isLoggedIn = true
+  const isLoggedIn = false
 
   return (
     <header className='header'>
