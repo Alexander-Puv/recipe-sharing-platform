@@ -1,0 +1,5 @@
+/* button */
+
+.button {
+  @apply flex items-center justify-center bg-yellow-custom rounded-2xl font-medium text-4xl
+}

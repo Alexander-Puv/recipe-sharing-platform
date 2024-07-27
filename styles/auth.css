@@ -1,0 +1,17 @@
+.auth__container {
+  @apply w-full h-screen flex bg-black-custom
+}
+
+.auth {
+  @apply w-full h-full my-auto relative flex justify-between bg-white z-10 lg:h-auto
+}
+.auth>svg {
+  @apply absolute top-0 max-w-[30%] max-h-[50%] -z-10
+}
+.auth>img {
+  @apply hidden h-auto w-[625px] max-w-[33%] lg:block
+}
+
+.auth__main {
+  @apply flex-1 flex items-center justify-center
+}

@@ -2,11 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 @import 'components.css';
+@import 'UI.css';
+@import 'auth.css';
 
 * {
   @apply m-0 p-0 box-border
 }
 
+h1 {
+  @apply text-7xl
+}
+h2 {
+  @apply text-5xl
+}
+h3 {
+  @apply text-4xl font-semibold
+}
+h4 {
+  @apply text-3xl
+}
+
+p, li {
+  @apply text-2xl
+}
+.sm {
+  @apply text-base font-light
+}
+
+input {
+  @apply bg-transparent outline-none border-none
+}
+
 body {
-  @apply overflow-x-hidden w-screen min-h-screen
+  @apply overflow-x-hidden w-screen min-h-screen flex flex-col
 }

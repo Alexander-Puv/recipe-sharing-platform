@@ -8,8 +8,19 @@ const config: Config = {
   ],
   theme: {
     extend: {
-
-    },
+      colors: {
+        black: {
+          DEFAULT: '#000000',
+          custom: '#111214'
+        },
+        yellow: {
+          custom: '#EBC76B'
+        },
+        gray: {
+          custom: '#E3E3E3'
+        }
+      }
+    }
   },
   plugins: [],
 };

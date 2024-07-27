@@ -1,5 +1,7 @@
+/* header */
+
 .header {
-  @apply h-[100px] flex justify-between pr-9 pl-4 bg-[#111214] text-white fill-white
+  @apply h-[100px] flex justify-between pr-9 pl-4 bg-black-custom text-white fill-white
 }
 .header>div {
   @apply flex gap-8 items-center
@@ -9,4 +11,43 @@
 }
 .header>div svg {
   @apply w-10 h-10
+}
+
+/* auth form */
+
+.authForm {
+  @apply flex flex-col w-[66%] py-10
+}
+.authForm>h3 {
+  @apply self-center
+}
+
+.authForm__inputs {
+  @apply mt-14 flex flex-col gap-16
+}
+.authForm__inputs>input {
+  @apply text-3xl bg-gray-custom rounded-2xl p-6
+}
+
+.authForm__help {
+  @apply mt-2 mb-14 flex items-end cursor-pointer
+}
+.authForm__help>input {
+  @apply w-4 h-4 m-1 cursor-pointer
+}
+
+.authForm>.button {
+  @apply font-semibold
+}
+
+.authForm__inputs>input,
+.authForm>.button {
+  @apply h-20
+}
+
+.authForm__or {
+  @apply w-full my-8 self-center flex gap-3 justify-center items-center
+}
+.authForm__line {
+  @apply max-w-44 w-full h-[1px] bg-black
 }
