@@ -1,0 +1,44 @@
+.mainFirst {
+  @apply relative text-white
+}
+.mainFirst>img {
+  @apply h-[32rem] object-cover
+    md:h-auto
+}
+
+.mainFirst__content {
+  @apply absolute top-0 w-full h-full flex flex-col
+}
+
+.mainFirst__search {
+  @apply w-1/2 self-center mt-8 flex items-center
+    rounded-full bg-white bg-opacity-20 border-white border-[1px]
+}
+.mainFirst__search input {
+  @apply px-9 w-full
+}
+.mainFirst__search svg {
+  @apply my-1 mr-7
+}
+
+.mainFirst__add {
+  @apply absolute bottom-10 left-16 hidden sm:block
+    md:bottom-20 md:left-24
+    lg:bottom-36 lg:left-44
+}
+.mainFirst__text {
+  @apply flex flex-col text-center mb-7 ml-32
+}
+.mainFirst__bottom {
+  @apply relative w-min
+}
+.mainFirst__bottom h4 {
+  @apply w-max py-1 px-4 rounded-2xl text-center bg-yellow-custom text-black
+}
+.mainFirst__bottom svg {
+  @apply absolute top-0 right-0 rotate-[70deg] translate-x-[100%] translate-y-[-60%]
+}
+
+.mainFirst__smScreen {
+  @apply absolute bottom-10 left-6 px-3 py-1 rounded-2xl text-center bg-yellow-custom text-black sm:hidden
+}
