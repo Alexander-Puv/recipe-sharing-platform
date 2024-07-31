@@ -16,21 +16,21 @@
 /* auth form */
 
 .authForm {
-  @apply flex flex-col w-[66%] py-10
+  @apply flex flex-col w-[80%] py-10 lg:w-[66%]
 }
 .authForm>h3 {
   @apply self-center
 }
 
 .authForm__inputs {
-  @apply mt-14 flex flex-col gap-16
+  @apply mt-14 flex flex-col gap-8 lg:gap-16
 }
 .authForm__inputs>input {
-  @apply text-3xl bg-gray-custom rounded-2xl p-6
+  @apply bg-gray-custom rounded-2xl p-6
 }
 
 .authForm__help {
-  @apply mt-2 mb-14 flex items-end cursor-pointer
+  @apply mt-2 mb-6 flex items-end cursor-pointer lg:mb-14
 }
 .authForm__help>input {
   @apply w-4 h-4 m-1 cursor-pointer
@@ -46,7 +46,7 @@
 }
 
 .authForm__or {
-  @apply w-full my-8 self-center flex gap-3 justify-center items-center
+  @apply w-full my-4 self-center flex gap-3 justify-center items-center lg:my-8
 }
 .authForm__line {
   @apply max-w-44 w-full h-[1px] bg-black
@@ -74,8 +74,5 @@
 
 .footer__svgs {
   @apply w-full absolute bottom-0 px-0 flex items-end
-    xl:px-36
-    lg:px-28
-    md:px-20
-    sm:px-10
+    xl:px-36 lg:px-28 md:px-20 sm:px-10
 }

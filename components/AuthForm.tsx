@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import Button from './UI/Button'
+import Link from 'next/link'
 
 interface AuthFormProps {
   signup?: boolean
@@ -40,7 +41,7 @@ const AuthForm = ({signup}: AuthFormProps) => {
         <div className="authForm__line" />
       </div>
 
-      <p className='self-center'>{signup ? 'Login' : 'Sign up'}</p>
+      <Link href={signup ? '/login' : '/signup'} className='self-center text-2xl'>{signup ? 'Login' : 'Sign up'}</Link>
     </div>
   )
 }
