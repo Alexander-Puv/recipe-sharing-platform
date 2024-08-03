@@ -3,3 +3,33 @@
 .button {
   @apply flex items-center justify-center bg-yellow-custom rounded-2xl font-medium text-4xl
 }
+
+/* content card */
+
+.contentCard-default {
+  @apply max-w-[22.5rem] max-h-[21.5rem] rounded-2xl text-[1.625rem]
+}
+
+.contentCard-defaultBig {
+  @apply max-w-96 max-h-[22.625rem] text-[2rem] font-semibold
+}
+.contentCard-defaultBig .contentCard__text {
+  @apply !flex-[60px]
+}
+
+.contentCard-default, .contentCard-defaultBig {
+  @apply flex flex-col border-black border-opacity-20 border-[1px]
+}
+.contentCard-default .contentCard__text,
+.contentCard-defaultBig .contentCard__text {
+  @apply flex-[50px] flex items-center justify-center text-center
+}
+
+
+.contentCard-default,
+.contentCard-defaultBig,
+.contentCard-rate,
+.contentCard-rateWide {
+  @apply cursor-pointer ease-linear duration-200 
+    hover:shadow-[0px_3px_40px_rgba(0,0,0,.25)]
+}
