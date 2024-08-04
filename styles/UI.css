@@ -6,6 +6,11 @@
 
 /* content card */
 
+.contentCard {
+  @apply relative flex flex-col
+}
+
+
 .contentCard-default {
   @apply max-w-[22.5rem] max-h-[21.5rem] rounded-2xl text-[1.625rem]
 }
@@ -18,11 +23,34 @@
 }
 
 .contentCard-default, .contentCard-defaultBig {
-  @apply flex flex-col border-black border-opacity-20 border-[1px]
+  @apply border-black border-opacity-20 border-[1px]
 }
 .contentCard-default .contentCard__text,
 .contentCard-defaultBig .contentCard__text {
   @apply flex-[50px] flex items-center justify-center text-center
+}
+
+
+.contentCard-rate {
+  @apply max-w-72 max-h-[25rem]
+}
+
+.contentCard-rateWide {
+  @apply max-w-[21.75rem] max-h-[23.75rem]
+}
+
+.contentCard-rate, .contentCard-rateWide {
+  /* @apply */
+}
+
+.contentCard-rate h5,
+.contentCard-rateWide h5 {
+  @apply text-2xl font-medium
+}
+.contentCard__fav {
+  @apply absolute top-4 right-4 w-[50px] h-[50px]
+    flex items-center justify-center
+    rounded-full bg-white z-10
 }
 
 
