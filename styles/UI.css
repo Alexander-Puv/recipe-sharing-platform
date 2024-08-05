@@ -7,7 +7,7 @@
 /* content card */
 
 .contentCard {
-  @apply relative flex flex-col
+  @apply relative flex flex-col cursor-pointer
 }
 
 
@@ -39,10 +39,6 @@
   @apply max-w-[21.75rem] max-h-[23.75rem]
 }
 
-.contentCard-rate, .contentCard-rateWide {
-  /* @apply */
-}
-
 .contentCard-rate h5,
 .contentCard-rateWide h5 {
   @apply text-2xl font-medium
@@ -58,6 +54,27 @@
 .contentCard-defaultBig,
 .contentCard-rate,
 .contentCard-rateWide {
-  @apply cursor-pointer ease-linear duration-200 
+  @apply ease-linear duration-200 
     hover:shadow-[0px_3px_40px_rgba(0,0,0,.25)]
+}
+
+
+.contentCard-textInside {
+  @apply max-w-[29.5rem] max-h-[27.25rem] w-full h-full
+    rounded-2xl overflow-hidden
+}
+.contentCard-textInside .contentCard__text {
+  @apply absolute bottom-0 w-full px-2 text-white
+    bg-gradient-to-b from-[rgba(0,0,0,0)] to-black
+    translate-y-[calc(100%-3.125rem-0.75rem)] duration-500 ease-linear
+}
+.contentCard-textInside .contentCard__text h5 {
+  @apply leading-[3.125rem] mt-3 text-2xl truncate
+}
+.contentCard-textInside .contentCard__text h4 {
+  @apply uppercase mb-2
+}
+
+.contentCard-textInside:hover .contentCard__text {
+  @apply translate-y-0
 }
