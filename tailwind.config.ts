@@ -19,6 +19,9 @@ const config: Config = {
         gray: {
           custom: '#E3E3E3'
         }
+      },
+      boxShadow: {
+        custom: '0px 4px 40px rgba(0,0,0,.25)',
       }
     }
   },

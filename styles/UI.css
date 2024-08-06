@@ -55,13 +55,12 @@
 .contentCard-rate,
 .contentCard-rateWide {
   @apply ease-linear duration-200 
-    hover:shadow-[0px_3px_40px_rgba(0,0,0,.25)]
+    hover:shadow-custom
 }
 
 
 .contentCard-textInside {
-  @apply max-w-[29.5rem] max-h-[27.25rem] w-full h-full
-    rounded-2xl overflow-hidden
+  @apply max-w-[29.5rem] max-h-[27.25rem] rounded-2xl overflow-hidden
 }
 .contentCard-textInside .contentCard__text {
   @apply absolute bottom-0 w-full px-2 text-white
@@ -77,4 +76,15 @@
 
 .contentCard-textInside:hover .contentCard__text {
   @apply translate-y-0
+}
+
+
+.contentCard-rounded {
+  @apply max-w-72 max-h-80 gap-1 items-center text-3xl
+}
+.contentCard-rounded img {
+  @apply w-[12.5rem] h-[12.5rem] rounded-full object-cover object-center ease-linear duration-200
+}
+.contentCard-rounded:hover img {
+  @apply shadow-custom
 }
