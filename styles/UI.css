@@ -80,10 +80,11 @@
 
 
 .contentCard-rounded {
-  @apply max-w-72 max-h-80 gap-1 items-center text-3xl
+  @apply max-w-72 max-h-80 w-full h-full gap-1 items-center text-3xl text-center
 }
 .contentCard-rounded img {
-  @apply w-[12.5rem] h-[12.5rem] rounded-full object-cover object-center ease-linear duration-200
+  @apply max-w-[12.5rem] max-h-[12.5rem] w-full h-full
+    rounded-full object-cover object-center ease-linear duration-200
 }
 .contentCard-rounded:hover img {
   @apply shadow-custom

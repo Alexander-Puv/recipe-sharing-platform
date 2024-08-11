@@ -10,11 +10,12 @@ interface ContentCardProps {
   text?: string
   rating?: number
   favourite?: boolean
+  className?: string
 }
 
-const ContentCard = ({variant = 'default', img, title, text, rating, favourite}: ContentCardProps) => {
+const ContentCard = ({variant = 'default', img, title, text, rating, favourite, className}: ContentCardProps) => {
   return (
-    <div className={`contentCard contentCard-${variant}`}>
+    <div className={`contentCard contentCard-${variant} ${className}`}>
       <Image src={img} alt={title} />
       <div className="contentCard__text">
         <h5>{title}</h5>
