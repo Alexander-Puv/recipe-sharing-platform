@@ -89,3 +89,15 @@
 .contentCard-rounded:hover img {
   @apply shadow-custom
 }
+
+
+
+.contentCard-row {
+  @apply flex-row gap-9 items-center
+}
+.contentCard-row img {
+  @apply w-max h-max
+}
+.contentCard-row h5 {
+  @apply text-3xl font-semibold
+}

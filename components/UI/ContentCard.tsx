@@ -4,7 +4,7 @@ import React from 'react'
 import RatingStars from './RatingStars'
 
 interface ContentCardProps {
-  variant?: 'default' | 'defaultBig' | 'rate' | 'rateWide' | 'textInside' | 'rounded'
+  variant?: 'default' | 'defaultBig' | 'rate' | 'rateWide' | 'textInside' | 'rounded' | 'row'
   img: string | StaticImport
   title: string
   text?: string
