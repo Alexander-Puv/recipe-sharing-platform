@@ -16,6 +16,9 @@ const config: Config = {
         yellow: {
           custom: '#EBC76B'
         },
+        orange: {
+          custom: '#C65C14'
+        },
         gray: {
           custom: '#E3E3E3'
         }

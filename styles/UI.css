@@ -65,7 +65,7 @@
 .contentCard-textInside .contentCard__text {
   @apply absolute bottom-0 w-full px-2 text-white
     bg-gradient-to-b from-[rgba(0,0,0,0)] to-black
-    translate-y-[calc(100%-3.125rem-0.75rem)] duration-500 ease-linear
+    translate-y-[calc(100%-3.125rem-0.75rem)] duration-500 ease-in-out
 }
 .contentCard-textInside .contentCard__text h5 {
   @apply leading-[3.125rem] mt-3 text-2xl truncate
