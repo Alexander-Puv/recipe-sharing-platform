@@ -83,7 +83,7 @@
     md:items-start
 }
 .cardsSection>h2 {
-  @apply w-max p-2 text-3xl uppercase md:text-5xl
+  @apply w-max p-2 text-3xl md:text-5xl
 }
 .cardsSection>div {
   @apply w-full flex flex-col items-center justify-between gap-4 md:flex-row md:items-stretch

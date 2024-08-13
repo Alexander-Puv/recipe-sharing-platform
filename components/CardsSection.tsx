@@ -9,7 +9,7 @@ interface CardsSectionProps {
 const CardsSection = ({title, children, home}: CardsSectionProps) => {
   return (
     <section className='cardsSection'>
-      <h2 className={home ? 'bg-yellow-custom' : ''}>{title}</h2>
+      <h2 className={home ? 'bg-yellow-custom uppercase' : ''}>{title}</h2>
       <div>
         {children}
       </div>
