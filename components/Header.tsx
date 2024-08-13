@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 
 const Header = () => {
-  const isLoggedIn = false
+  const isLoggedIn = true
 
   return (
     <header className='header'>
@@ -23,7 +23,7 @@ const Header = () => {
             Sign up
           </Link>
         </> : <>
-          <Link href='/login'>
+          <Link href='/profile'>
             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M24.9998 4.16667C13.4936 4.16667 4.1665 13.4938 4.1665 25C4.1665 36.5063 13.4936 45.8333 24.9998 45.8333C36.5061 45.8333 45.8332 36.5063 45.8332 25C45.8332 13.4938 36.5061 4.16667 24.9998 4.16667Z" stroke="white" strokeWidth="3.125" strokeLinecap="round" strokeLinejoin="round"/>
               <path d="M8.89795 38.2208C8.89795 38.2208 13.5417 32.2917 25 32.2917C36.4584 32.2917 41.1042 38.2208 41.1042 38.2208M25 25C26.6576 25 28.2473 24.3415 29.4195 23.1694C30.5916 21.9973 31.25 20.4076 31.25 18.75C31.25 17.0924 30.5916 15.5027 29.4195 14.3306C28.2473 13.1585 26.6576 12.5 25 12.5C23.3424 12.5 21.7527 13.1585 20.5806 14.3306C19.4085 15.5027 18.75 17.0924 18.75 18.75C18.75 20.4076 19.4085 21.9973 20.5806 23.1694C21.7527 24.3415 23.3424 25 25 25Z" stroke="white" strokeWidth="3.125" strokeLinecap="round" strokeLinejoin="round"/>

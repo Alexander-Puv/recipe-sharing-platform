@@ -1,15 +1,8 @@
-import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 import Image from 'next/image'
-import React from 'react'
 import RatingStars from './RatingStars'
 
-interface ContentCardProps {
+interface ContentCardProps extends recipeData {
   variant?: 'default' | 'defaultBig' | 'rate' | 'rateWide' | 'textInside' | 'rounded' | 'row'
-  img: string | StaticImport
-  title: string
-  text?: string
-  rating?: number
-  favourite?: boolean
   className?: string
 }
 

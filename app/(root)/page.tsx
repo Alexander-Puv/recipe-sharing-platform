@@ -42,14 +42,14 @@ export default function Home() {
         </div>
       </section>
 
-      <CardsSection title="What we're craving">
+      <CardsSection title="What we're craving" home>
         <ContentCard img={imgCrave1} title="Chicken Pasta" />
         <ContentCard img={imgCrave2} title="Chicken Pizza" />
         <ContentCard img={imgCrave3} title="Tomato Basil Soup" />
         <ContentCard img={imgCrave4} title="Paneer Butter Masala" />
       </CardsSection>
 
-      <CardsSection title="More recipes">
+      <CardsSection title="More recipes" home>
         <ContentCard variant='rounded' img={imgMore1} title="Quick & Easy" />
         <ContentCard variant='rounded' img={imgMore2} title="Healthy" />
         <ContentCard variant='rounded' img={imgMore3} title="BBQ" />
@@ -57,7 +57,7 @@ export default function Home() {
         <ContentCard variant='rounded' img={imgMore5} title="Vegetarian" className='break-all' />
       </CardsSection>
 
-      <CardsSection title="Collections">
+      <CardsSection title="Collections" home>
         <ContentCard variant='textInside' img={collection1} title="Collection" text="Collection" />
         <ContentCard variant='textInside' img={collection2} title="Collection" text="Collection" />
         <ContentCard variant='textInside' img={collection3} title="Collection" text="Collection" />
