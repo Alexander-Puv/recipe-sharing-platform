@@ -86,5 +86,5 @@
   @apply w-max p-2 text-3xl md:text-5xl
 }
 .cardsSection>div {
-  @apply w-full flex flex-col items-center justify-between gap-4 md:flex-row md:items-stretch
+  @apply w-full flex flex-col items-center gap-4 md:flex-row md:items-stretch
 }

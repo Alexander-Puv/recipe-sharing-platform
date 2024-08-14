@@ -25,7 +25,7 @@ const RatingStars = ({rating = 0}: {rating?: number}) => {
   }
 
   return (
-    <div className='flex pb-2 pl-1'>{stars}</div>
+    <div className='flex pb-2 pl-1 gap-1'>{stars}</div>
   )
 }
 

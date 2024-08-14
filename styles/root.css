@@ -1,10 +1,10 @@
 /* main */
 
-.home>* {
+main>* {
   @apply px-8 lg:px-20 xl:px-32 2xl:px-44
 }
 
-/* main first */
+/* home first */
 
 .homeFirst {
   @apply relative text-white px-0
@@ -51,7 +51,7 @@
   @apply absolute bottom-10 left-6 px-3 py-1 rounded-2xl text-center bg-yellow-custom text-black sm:hidden
 }
 
-/* main last */
+/* home last */
 
 .homeLast {
   @apply flex flex-col mt-16 mb-40 xl:flex-row
@@ -75,4 +75,39 @@
 
 .homeLast__right {
   @apply flex-1 flex flex-col gap-4 self-center
+}
+
+
+
+/* profile */
+
+.profileTop {
+  @apply flex flex-col gap-[6.5rem] pt-20 pb-10
+}
+
+.profileTopInfo {
+  @apply flex flex-col gap-10
+}
+.profileTopInfo__top {
+  @apply flex flex-col items-center gap-10
+    lg:flex-row lg:gap-0
+}
+/* .profileTopInfo__mainData {
+  @apply ml-[6.25rem] flex flex-col
+} */
+.profileTopInfo__media {
+  @apply mt-6 flex gap-4
+}
+.profileTopInfo__top button {
+  @apply w-56 h-20 text-3xl
+    lg:ml-auto
+}
+
+.profileTopActivity {
+  @apply flex gap-9 flex-col items-center
+    sm:flex-row sm:items-start
+}
+.profileTopActivity>div {
+  @apply max-w-[22.5rem] h-44 w-full border-gray-custom border-[1px]
+    flex flex-col items-center justify-center
 }
