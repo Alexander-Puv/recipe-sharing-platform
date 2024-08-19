@@ -5,3 +5,12 @@ interface recipeData {
   rating?: number
   favourite?: boolean
 }
+
+interface notificationData {
+  action: 'comment' | 'like' | 'follow'
+  senderImg: string | StaticImport
+  senderName: string
+  sendTime: string // change
+  comment?: string
+  to?: string | StaticImport // change?
+}

@@ -12,6 +12,9 @@
 .header>div svg {
   @apply w-10 h-10
 }
+.header>div button {
+  @apply relative
+}
 
 /* auth form */
 
@@ -78,6 +81,7 @@
 }
 
 /* cards section */
+
 .cardsSection {
   @apply flex flex-col items-center gap-[4.5rem] pt-16 pb-20
     md:items-start
@@ -87,4 +91,33 @@
 }
 .cardsSection>div {
   @apply w-full flex flex-col items-center gap-4 md:flex-row md:items-stretch
+}
+
+/* notifications */
+
+.notifications {
+  @apply absolute top-[70px] -right-24 w-[27.125rem] h-[40rem] z-20
+    flex flex-col bg-white text-black cursor-default
+}
+.notifications__head {
+  @apply h-14 flex items-center justify-between pl-9 pr-5
+}
+.notifications__line {
+  @apply h-px bg-gray-custom
+}
+.notifications__cards {
+  @apply pt-8 pr-10 pl-6
+}
+
+.notificationsCard {
+  @apply flex px-4 pt-2 pb-3
+}
+.notificationsCard__left {
+  @apply flex-[0_0_44px] flex flex-col gap-2
+}
+.notificationsCard__center {
+  @apply w-[12.5rem] ml-4 text-start
+}
+.notificationsCard__right {
+  @apply ml-auto flex-[0_0_45px]
 }
